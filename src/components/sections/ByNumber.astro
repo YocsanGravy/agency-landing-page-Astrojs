@@ -1,6 +1,23 @@
 ---
 import Container from "../shared/Container.astro";
 ---
+<style>
+  .number-animation:hover {
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
 
 <section class="relative mt-12 md:mt-16">
   <Container>
@@ -9,38 +26,38 @@ import Container from "../shared/Container.astro";
     >
       <div class="text-center">
         <h2
-          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1"
+          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1 number-animation"
         >
-          12+
+          7+
         </h2>
-        <p class="mt-2 text-heading-3">Created projects</p>
+        <p class="mt-2 text-heading-3">Proyectos en Desarrollo</p>
       </div>
 
       <div class="text-center">
         <h2
-          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1"
+          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1 number-animation"
         >
-          200+
+          10
         </h2>
-        <p class="mt-2 text-heading-3">Projects</p>
+        <p class="mt-2 text-heading-3">Proyectos</p>
       </div>
 
       <div class="text-center">
         <h2
-          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1"
+          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1 number-animation"
         >
-          120
+          10
         </h2>
-        <p class="mt-2 text-heading-3">Happy Client</p>
+        <p class="mt-2 text-heading-3">Clientes Felices</p>
       </div>
 
       <div class="text-center">
         <h2
-          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1"
+          class="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1 number-animation"
         >
           5+
         </h2>
-        <p class="mt-2 text-heading-3">Years</p>
+        <p class="mt-2 text-heading-3">Meses</p>
       </div>
     </div>
   </Container>
